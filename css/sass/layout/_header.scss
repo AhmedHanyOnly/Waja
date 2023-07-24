@@ -1,0 +1,124 @@
+.header {
+  .head-nav {
+    background-color: $main-color;
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      .contact {
+        display: flex;
+        gap: 50px;
+        div {
+          direction: ltr;
+          span {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #f1f1f1;
+          }
+          img {
+            padding: 0 10px;
+          }
+        }
+      }
+      .social {
+        img {
+          padding: 0 10px;
+        }
+      }
+    }
+    @include maxWidth(sm) {
+      .content {
+        padding: 10px;
+        .contact {
+          display: flex;
+          gap: 10px;
+          div {
+            direction: ltr;
+            display: flex;
+            span {
+              font-family: Roboto;
+              font-size: 10px;
+              font-weight: 400;
+              line-height: 16px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #f1f1f1;
+            }
+            img {
+              padding: 0 10px;
+              width: 32px;
+              height: 15px;
+            }
+          }
+        }
+        .social {
+          img {
+            padding: 0 3px;
+            width: 18px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+  .bottom-nav {
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      .logo {
+        width: 187px;
+        img {
+          width: 100%;
+        }
+      }
+      ul {
+        display: flex;
+        .item {
+          a {
+            padding: 10px;
+            margin: 0 10px;
+            font-family: Cairo;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+          &.active {
+            a {
+              color: $main-color;
+              padding: 5px;
+              border-bottom: 2px solid $main-color;
+            }
+          }
+        }
+      }
+      button {
+        width: Hug (108px);
+        height: Hug (38px);
+        top: 67px;
+        left: 140px;
+        background-color: #fff;
+        a{
+          padding: 4px 11px 4px 11px;
+          border-radius: 4px;
+          border: 0.5px solid $main-color;
+          gap: 10px;
+          color: $main-color;
+          transition: 0.3s;
+          &:hover{
+            color: #f1f1f1;
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+  }
+}
