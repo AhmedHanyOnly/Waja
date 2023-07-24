@@ -1,17 +1,30 @@
 // Use colors
-@import "./sass/helpers/colors";
-// Use transition
-@import "./sass/helpers/transition";
+@import "./sass/variables/colors";
+// Use transitions
+@import "./sass/variables/transitions";
+// Use animations
+@import "./sass/variables/animations";
+// Use Sliders
+@import "./sass/variables/sliders";
 // Use Mixins
 @import "./sass/helpers/mixins";
-// Use Header
-@import "./sass/layout/header";
-// Use Footer
-@import "./sass/layout/footer";
-//use landing
-@import "./sass/pages/landing.scss";
+// Use helpers classes
+@import "./sass/components/helpersClasses";
+// Use dropdowns & Buttons
+@import "./sass/components/dropdowns&Buttons";
+// Use headings
+@import "./sass/components/headings";
+// Use boxes
+@import "./sass/components/boxes";
+// Use forms
+@import "./sass/components/forms";
 // Use Global Page
 @import "./sass/pages/globalPage";
-//page login
-@import "./sass/components/login.scss";
-
+// Use Header
+@import "./sass/layouts/header";
+// Use Page
+@import "./sass/pages/main";
+// Use login
+@import "./sass/pages/login.scss";
+// Use footer
+@import "./sass/layouts/footer";

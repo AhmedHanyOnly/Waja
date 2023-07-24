@@ -1,20 +1,31 @@
-body {
-  font-family: 'Cairo', sans-serif !important;
-  color: black;
-  font-size: 14px;
+* {
+  @include reset-all;
+}
+html {
   scroll-behavior: smooth;
 }
-// All Rest
-* {
-  @include all-reset;
-  list-style: none;
+body {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  color: $text-color1;
 }
-// a Reset
+// reset Ul
+ul {
+  @include reset-ul;
+}
+// reset Link
 a {
   @include a-reset;
 }
 // reset btn
 button {
   border: none;
+  outline: none;
+}
+// Reset Input
+input:focus,
+select:focus {
   outline: none;
 }
